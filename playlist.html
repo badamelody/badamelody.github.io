@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'fff1pii',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'mku4svl',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+<style>
+    body {
+        background-color: black;
+    }
+    .clear {
+        clear: both;
+    }
+    header {
+        width: 100%;
+        margin: 0 auto;
+        height: 140px;
+        
+    }
+    #logo {
+        float: left;
+        margin: 0 auto;
+        
+    }
+    #main_img {
+        width: 100%;
+        height: 650px;
+        
+    }
+    #main_img {
+    text-align: center;
+    margin-top: 100px;
+    }
+
+    #main_img img {
+    display: inline-block; /* 이미지를 인라인 블록 요소로 변경하여 세로 정렬을 적용 */
+    vertical-align: middle; /* 세로 중앙 정렬을 위해 vertical-align 속성 사용 */
+    }
+    /* 이미지 크기가 뷰포트의 높이를 초과하지 않도록 설정 */
+    #main_img img {
+    max-height: 100%; /* 이미지가 부모 요소의 높이를 초과하지 않도록 설정 */
+    max-width: 100%; /* 이미지가 부모 요소의 너비를 초과하지 않도록 설정 */
+    }
+    #contents {
+        width: 1140px;
+        height: 300px;
+        margin: 0 auto;
+        
+    }
+    #menus {
+    float: right;
+    /*border: solid 1px red;*/
+    }
+    #main_menu {
+    margin-right: 50px;
+    margin-top: 60px;
+    font-family: "etna", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(238, 255, 0);
+    /*border: solid 1px red;*/
+    }
+    #main_menu li {
+    display: inline;
+    margin-left: 80px;
+    }
+    /*#text_menu{
+        margin-left: 0px;
+        width: 650px;
+        height: 500px;
+        float: left;
+        
+    }
+    #text_menu h3 {
+        color:yellow;
+        font-family: "etna", sans-serif;
+        font-weight: 200;
+        font-size: 22px;
+        margin-top: 20px;
+        padding-bottom: 8px;
+        border-bottom: solid 1px yellow;
+    }
+    #text_menu p {
+        font-family: "etna", sans-serif;
+        font-weight: 200;
+        margin-top: 20px;
+        text-align: left;
+        font-size: 17px;
+        color: #FFFF00;
+    }*/
+    #main_contents {
+        width: 100%px;
+        height: 1500px;
+        margin-top: 70px;
+        /*border: solid 1px red;*/
+        overflow-x: auto; /* 가로 스크롤 허용 */
+    }
+    footer {
+        text-align: center;
+        /*border: 1px solid white;*/
+    }
+    #footer_box {
+        color: white;
+        width: 100%;
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 200px;
+        /*border: 1px solid white;*/
+        
+    }
+    #footer_logo {
+        float: none;
+        margin: 0 auto;
+        /*border: 1px solid white;*/
+    }
+    #address {
+        font-family: "etna", sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        list-style-type: none;
+        float: none;
+        margin: auto 0;
+        color: white;
+        /*border: 1px solid white;*/
+        
+    }
+    a:link, a:visited{
+    color:yellow;
+    text-decoration: none;
+    }
+    a:hover, a:active {
+        background-image: url(1x/Asset\ 4.png);
+        color:#ffffff;
+    }
+    .highlighted::selection {
+    background-color: rgb(0, 84, 228); 
+    color:rgb(255, 255, 255);
+    font-family:'Noto Serif KR', serif;
+    font-size: 18px;
+    text-align: left;
+    line-height: 170%;
+    }
+    #scroll {
+    overflow: auto;
+    white-space: nowrap;
+    }
+    .scroll-container {
+    overflow-x: auto; 
+    white-space: nowrap;
+    overflow-y: hidden;
+    }
+    /* .scroll-container::-webkit-scrollbar {
+    width: 0; 
+    }*/
+    .scroll-container::-webkit-scrollbar {
+    width: 10px; /* 스크롤바 너비 */
+    }
+
+    .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #000000; /* 스크롤바 색상 */
+    border-radius: 3px; /* 스크롤바 모양 */
+    }
+
+    .scroll-container::-webkit-scrollbar-track {
+    background-color: #ffff00; /* 스크롤바 트랙 색상 */ 
+    }
+    .container {
+    white-space: nowrap; 
+    font-size: 0; 
+    vertical-align: top; /* 추가된 부분 */
+    }
+    .square img {
+    width: 350px;
+    height: 350px; 
+    background-color: none; 
+    display: inline-block; 
+    margin: 0; 
+    transition: background-color 0.3s ease; 
+    filter: grayscale(100%); /* 흑백으로 변환 */
+    }
+
+    .square:hover img {
+    filter:grayscale(0%)
+}
+    .square {
+    width: 350px;
+    height: 350px; 
+    background-color: none; 
+    border: 1px solid #ffff00; 
+    display: inline-block; 
+    margin: 0; 
+    transition: background-color 0.3s ease; 
+    }
+
+    .square:hover {
+    background-color: #ffff00;
+    }
+    .rectangle {
+    padding-left: 0.1%;
+    vertical-align: top; /* 추가된 부분 */
+    color:white;
+    font-family: "sandoll-myeongjoneo1", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 10pt; 
+    width: 350px;
+    height: 100px;
+    background-color: none;
+    border: 1px solid #ffff00;
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+    }
+    .rectangle h3 {
+    font-family: "sandoll-myeongjoneo1", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+
+    }
+    .rectangle:hover {
+        color:black;
+        background-color: #ffff00;
+    }
+
+
+</style>
+</head>
+<body>
+    <header>
+    <div id="logo">
+    <a href="index.html"><img src="Asset 2.png"></a>
+    </div>
+    <nav id="menus">
+        <ul id="main_menu">
+            <li><a href="sidereal.html">sidereal period</a></li>
+            <li><a href="anoma.html">anomalistic period</a></li>
+            <li><a href="draconic.html">draconic period</a></li>
+            <li><a href="playlist.html">playlist</a></li>
+            <li><a href="graphic.html">graphic</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <!--<section id="main_img">
+    <img src="모션01.gif">
+    </section>-->
+
+    <div id="main_contents">
+        <div class="scroll-container">
+        <div class="container">
+            <div class="square">
+                <img src="06.jpeg" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="s17.png" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="02.webp" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="03.webp" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="04.webp" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="05.webp" width="349" height="349">
+            </div>
+        </div>
+        </div>
+        <div class="scroll-container">
+        <div class="container">
+        <div class="rectangle">
+            <h3>David Bowie</h3><br>
+            Space Oddity
+        </div>
+        <div class="rectangle">
+            <h3>BUMP OF CHIKEN</h3><br>
+            宇宙飛行士への手紙
+        </div>
+        <div class="rectangle">
+            <h3>The BEATLES</h3><br>
+            Across the Universe
+        </div>
+        <div class="rectangle">
+            <h3>NELL</h3><br>
+            Dystopian's Eutopia
+        </div>
+        <div class="rectangle">
+            <h3>yerin BAEK</h3><br>
+            FRANK
+        </div>
+        <div class="rectangle">
+            <h3>BTS</h3><br>
+            소우주(Mikrokosmos)
+        </div>
+        </div>
+        </div>
+        
+        <div class="scroll-container">
+        <div class="container">
+            <div class="square">
+                <img src="07.jpeg" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="08.jpeg" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="09.svg" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="10.jpeg" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="11.jpeg" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="12.jpeg" width="349" height="349">
+            </div>
+        </div>
+        </div>
+
+        <div class="scroll-container">
+            <div class="container">
+            <div class="rectangle">
+                <h3>MUSE</h3><br>
+                Black Holes and Revelations
+            </div>
+            <div class="rectangle">
+                <h3>Space</h3><br>
+                space
+            </div>
+            <div class="rectangle">
+                <h3>Pink Floyd</h3><br>
+                The Great Gig in the Sky
+            </div>
+            <div class="rectangle">
+                <h3>Guardians Of The Galaxy OST</h3><br>
+                Awesome Mix Vol. 1
+            </div>
+            <div class="rectangle">
+                <h3>BoA</h3><br>
+                No.1
+            </div>
+            <div class="rectangle">
+                <h3>RADWIMPS</h3><br>
+                スパークル
+            </div>
+            </div>
+            </div>
+
+        <div class="scroll-container">
+        <div class="container">
+            <div class="square">
+                <img src="06.png" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="13.png" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="01.png" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="14.jpeg" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="15.jpeg" width="349" height="349">
+            </div>
+            <div class="square">
+                <img src="16.webp" width="349" height="349">
+            </div>
+        </div>
+        </div>
+
+        <div class="scroll-container">
+            <div class="container">
+            <div class="rectangle">
+                <h3>BUMP OF CHICKEN</h3><br>
+                Orbital Period
+            </div>
+            <div class="rectangle">
+                <h3>Mansun</h3><br>
+                wide open space
+            </div>
+            <div class="rectangle">
+                <h3>BUMP OF CHICKEN</h3><br>
+                天体観測
+            </div>
+            <div class="rectangle">
+                <h3>Coldplay, BTS</h3><br>
+                My Universe
+            </div>
+            <div class="rectangle">
+                <h3>Thornapple</h3><br>
+                수성의 하루
+            </div>
+            <div class="rectangle">
+                <h3>daft punk</h3><br>
+                Discovery
+            </div>
+            </div>
+            </div>
+
+    </div>
+    </section>
+
+    <div class="clear"></div>
+
+    <footer>
+    <div id="footer_box">
+    <!--<div id="footer_logo">
+        <img src="1x/Asset 1.png">
+    </div>-->
+    <div id="address">
+    Orbital Period <br>
+    COPYRIGHT(C)KIMSOHYUN ALL RIGHTS RESERVED
+
+    </div>
+    
+    
+    </footer>
+
+    
+</body>
+</html>
